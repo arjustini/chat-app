@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node:
+    #build: .
+    image: ajustiniano1/chat-app
+    command: node index.js
+    environment:
+      - DEBUG=True
+    ports:
+      - 3000:3000
